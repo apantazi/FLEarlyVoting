@@ -11,7 +11,7 @@ setwd("C:/Users/Andrew/Downloads/EVL_10866/")
 
 ## Reading in ---------------------------------
 
-#read in in-person early voter file
+#read in in-person early voter file (https://countyballotfiles.floridados.gov/VoteByMailEarlyVotingReports/PublicStats)
 early_voters <- read_delim("EVL_10866_10212020_082114752.txt",  delim = '\t',escape_double = FALSE, trim_ws = TRUE, col_names=c("RecordType",	"CountyId",	"FvrsElectionNumber",	"ElectionDate",	"ElectionName",	"Voter_ID",	"VoterName",	"AbsPrecinct",	"PrecinctSplit",	"CongressionalDistrict",	"SenateDistrict",	"HouseDistrict",	"CountyCommissionDistrict",	"SchoolBoardDistrict",	"OtherDistricts",	"AbsParty",	"Location",	"DateofEarlyVote"))
 
 #create list of voters
